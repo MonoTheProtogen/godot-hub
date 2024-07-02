@@ -66,5 +66,6 @@ ipcMain.on('minimize', () => {
 })
 
 ipcMain.on('credits', () => {
-  shell.openExternal('https://github.com/MonoTheProtogen')
+  // shell.openExternal('https://github.com/MonoTheProtogen')
+  shell.openExternal('https://github.com/MonoTheProtogen/godot-hub')
 })
