@@ -1,0 +1,2 @@
+1) don't upload node_modules to github, remove it from the repo entirely
+2) recreate node_modules with the package.json, using the comman "npm i"

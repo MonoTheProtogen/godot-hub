@@ -1,0 +1,139 @@
+@font-face {
+    font-family: custom;
+    src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    background-color: #343445;
+    font-family: custom;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-areas: 
+    "head head"
+    "side main"
+    "credits main";
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    color: white;
+}
+img {
+    width: 70px;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+img.menu {
+    background-color: #121223;
+}
+div.header {
+    grid-area: head;
+    background-color: #343445;
+    width: 400px;
+    /* border-bottom-right-radius: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+div.control {
+    grid-area: head;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    -webkit-app-region: drag;
+}
+div.control > h2 {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transition-duration: 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 10px;
+    -webkit-app-region: no-drag;
+}
+h2.close:hover {
+    background-color: #DD2222;
+}
+h2.minimize:hover {
+    background-color: #232334;
+}
+div.headspace {
+    width: 15px;
+}
+p.ver {
+    align-self: flex-end;
+    padding-bottom: 20px;
+    font-size: 10pt;
+}
+
+div.side {
+    grid-area: side;
+    height: fit-content;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #232334;
+    padding: 5px;
+}
+div.side > img {
+    width: 40px;
+    height: 40px;
+}
+div.sidespace {
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.credits {
+    height: fit-content;
+    font-size: 10pt;
+    color: #999;
+    width: 100%;
+    position: relative;
+    bottom: -100px;
+    left: 20px;
+}
+a.nick {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #999;
+    text-decoration: underline;
+    transition-duration: 0.25s;
+}
+a.nick:visited {
+    color: #999;
+    text-decoration: underline;
+    transition-duration: 0.25s;
+}
+a.nick:link {
+    color: #999;
+    text-decoration: underline;
+    transition-duration: 0.25s;
+}
+a.nick:hover {
+    color: #DDD;
+    transition-duration: 0.25s;
+}
+
+div.body {
+    grid-area: main;
+    margin-left: 10px;
+    border-top-left-radius: 15px;
+    background-color: #121223;
+    height: 610px;
+}
+
