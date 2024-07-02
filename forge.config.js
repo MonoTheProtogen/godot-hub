@@ -11,21 +11,26 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {
         options: {
-          icon: './images/hub_icon_512x512.png'
+          icon: './images/hub_icon_512x512.ico'
         }
       },
     },
     {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
+      config: {
+        options: {
+          icon: './images/hub_icon_512x512.icns'
+        }
+      }
     },
     {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
         icon: './images/hub_icon_512x512.png'
-      }
-    },
+        }
+      },
     },
     {
       name: '@electron-forge/maker-rpm',
