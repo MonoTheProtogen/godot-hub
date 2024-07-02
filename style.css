@@ -147,5 +147,7 @@ div.body {
     background-color: #121223;
     height: 610px;
     cursor: default;
+    color: white;
+    padding-left: 25px;
 }
 
