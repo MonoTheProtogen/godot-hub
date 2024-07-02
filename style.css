@@ -18,6 +18,20 @@ body {
     color: white;
     cursor: default;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 img {
     width: 70px;
     height: 70px;
@@ -142,6 +156,8 @@ a.nick:hover {
 
 div.body {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
     border-top-left-radius: 15px;
     background-color: #121223;
@@ -151,3 +167,97 @@ div.body {
     padding-left: 25px;
 }
 
+div.utilitybar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+h2.title {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+p.newproj {
+    background-color: #232334;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #44DD44;
+    transition-duration: 0.25s;
+    margin: 0px;
+    position: relative;
+    left: 860px;
+}
+p.newproj:hover {
+    color: white;
+    background-color: #343445;
+}
+
+div.settingbody {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+div.settingbody > p {
+    font-weight: bold;
+    font-size: 12pt;
+}
+div.settingbody > p > input {
+    background-color: #232334;
+    border-bottom: #343445;
+    border-color: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 10pt;
+}
+button {
+    background-color: #232334;
+    border-bottom: #343445;
+    border-color: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 10pt;
+    margin-left: 10px;
+    font-family: custom;
+}
+input {
+    font-family: custom;
+}
+p.setsave {
+    background-color: #232334;
+    border-radius: 15px;
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #44DD44;
+    transition-duration: 0.25s;
+    margin: 0px;
+    position: relative;
+    left: 830px;
+}
+p.setsave:hover {
+    color: white;
+    background-color: #343445;
+}
+p.note {
+    color: #555;
+}

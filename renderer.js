@@ -34,19 +34,40 @@ versions.addEventListener("click", function() {bodyTab = 1; bodyPrint()})
 settings.addEventListener("click", function() {bodyTab = 2; bodyPrint()})
 
 function bodyPrint() {
-    body.innerHTML = ""
+    body.innerHTML = ''
+    
     switch(bodyTab) {
         case 0:
-            body.innerHTML += "<h2>Projects</h2>"
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Projects</h2> <p class="newproj">+</p> </div>'
+
+            
+
+            const newproj = document.querySelector(".newproj")
 
             break;
         case 1:
-            body.innerHTML += "<h2>Versions</h2>"
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Versions</h2> </div>'
+
+
 
             break;
         case 2:
-            body.innerHTML += "<h2>Settings</h2>"
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Settings</h2> <p class="setsave">Apply</p>  </div>'
+
+            body.innerHTML += '<div class="settingbody"> <p>Projects folder path: </p> <p>Godot versions folder path: </p> <p class="note">Note: Changes won\'t take effect until clicking the apply button and restarting the app.</p> </div>'
+            
+            const projpath = document.querySelector(".projpath")
+            const verpath = document.querySelector(".verpath")
+            const setsave = document.querySelector(".setsave")
+
+            setsave.addEventListener("click", function() {
+                console.log(projpath.value)
+                console.log(verpath.value)
+            })
+
+            break;
     }
+
 }
 
 bodyPrint()
