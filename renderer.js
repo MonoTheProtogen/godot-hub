@@ -1,8 +1,11 @@
+// renderer.js
+
 // startup
 
 let appOptions
 async function startup() {
     appOptions = await window.electronAPI.getSettings()
+    console.log(appOptions)
 }
 // when they switch to the settings tab use appOptions to populate the 2 textboxes
 
@@ -60,6 +63,8 @@ function bodyPrint() {
             
             const projectpath = document.querySelector(".projectpath")
             const versionpath = document.querySelector(".versionpath")
+            projectpath.value = appOptions.projectFolder
+            versionpath.value = appOptions.versionFolder
             
 
             document.querySelector('.projbrowse').addEventListener('click', async () => {
