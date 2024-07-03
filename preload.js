@@ -19,5 +19,28 @@ window.addEventListener('DOMContentLoaded', () => {
 
   contextBridge.exposeInMainWorld('electronAPI', {
     // other handlers
-    setHomeFolder: () => ipcRenderer.invoke('settings:setHomeFolder')
+    setHomeFolder: () => ipcRenderer.invoke('settings:setProjectFolder'),
+    setHomeFolder: () => ipcRenderer.invoke('settings:setVersionFolder'),
+    closeApp: () => ipcRenderer.invoke('action:close'),
+    minimizeApp: () => ipcRenderer.invoke('action:minimize'),
+    openCredits: () => ipcRenderer.invoke('link:credits')
   })
+
+// titlebar and other functions
+
+function closeApp(e) {
+  e.preventDefault()
+  ipcRenderer.send('close')
+}
+
+function minimizeApp() {
+  ipcRenderer.send('minimize')
+}
+
+function openCredits() {
+  ipcRenderer.send('credits')
+}
+
+contextBridge.exposeInMainWorld('electronAPI', {
+  getSettings: () => ipcRenderer.invoke('settings:getSettings'),
+})

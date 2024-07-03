@@ -1,25 +1,23 @@
+// startup
+
+let appOptions
+async function startup() {
+    appOptions = await window.electronAPI.getSettings()
+}
+// when they switch to the settings tab use appOptions to populate the 2 textboxes
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded')
+    startup()
+})
+
 // titlebar functions
 
-const ipc = require('electron').ipcRenderer
+document.querySelector('.close').addEventListener("click", window.electronAPI.closeApp)
 
-function closeApp(e) {
-    e.preventDefault()
-    ipc.send('close')
-}
+document.querySelector('.minimize').addEventListener("click", window.electronAPI.minimizeApp)
 
-function minimizeApp() {
-    ipc.send('minimize')
-}
-
-function openCredits() {
-    ipc.send('credits')
-}
-
-document.querySelector('.close').addEventListener("click", closeApp)
-
-document.querySelector('.minimize').addEventListener("click", minimizeApp)
-
-document.querySelector('.credits').addEventListener("click", openCredits)
+document.querySelector('.credits').addEventListener("click", window.electronAPI.openCredits)
 
 // Main view portion
 
@@ -56,20 +54,32 @@ function bodyPrint() {
 
             break;
         case 2:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Settings</h2> <p class="setsave">Apply</p>  </div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Settings</h2> </div>'
 
-            body.innerHTML += '<div class="settingbody"> <p>Projects folder path: <input type="text" class="projectpath"> <input type="button" value="Browse" class="projbrowse"> </p> <p>Godot versions folder path: <input type="text" class="versionpath"> <input type="button" value="Browse" class="verbrowse"> </p> <p class="note">Note: Changes won\'t take effect until clicking the apply button and restarting the app.</p> </div>'
+            body.innerHTML += '<div class="settingbody"> <p>Projects folder path: <input type="text" class="projectpath" value=""> <input type="button" value="Browse" class="projbrowse"> </p> <p>Godot versions folder path: <input type="text" class="versionpath" value=""> <input type="button" value="Browse" class="verbrowse"></div>'
             
-            const projectpath = document.querySelector(".projpath")
-            const versionpath = document.querySelector(".verpath")
+            const projectpath = document.querySelector(".projectpath")
+            const versionpath = document.querySelector(".versionpath")
+            
 
             document.querySelector('.projbrowse').addEventListener('click', async () => {
-                const folder = await window.electronAPI.setHomeFolder()
+                const folder = await window.electronAPI.setProjectFolder()
                 if (folder) {
                   // a folder was set so do whatever is next
-                  console.log(`user set the folder to ${folder}`)
+                  projectpath.value = folder
                 }
               })
+
+            document.querySelector('.verbrowse').addEventListener('click', async () => {
+                const folder = await window.electronAPI.setVersionFolder()
+                if (folder) {
+                  // a folder was set so do whatever is next
+                  versionpath.value = folder
+                }
+              })
+
+            projectpath.value = appOptions.projectFolder
+            versionpath.value = appOptions.versionFolder 
 
             break;
     }
