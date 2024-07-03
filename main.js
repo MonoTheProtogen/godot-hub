@@ -125,8 +125,6 @@ ipcMain.handle('settings:saveSettings', () => {
 const appOptions = {
   windowX: undefined,
   windowY: undefined,
-  windowWidth: undefined,
-  windowHeight: undefined,
   homeFolder: undefined
 }
 const appConfig = path.join(app.getPath('userData'), 'app-config.json')
