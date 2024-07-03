@@ -17,6 +17,6 @@ This app ***does not*** have any prebuilt binaries yet, as soon as it is in a fu
 
 ## Credits
 
-Electron.js and Node.js - frameworks used by this app
-Godot Game Engine - game engine for which this app is made
-clubside - help with and bugfixing of the settings tab
+- Electron.js and Node.js - frameworks used by this app
+- Godot Game Engine - game engine for which this app is made
+- clubside - help with and bugfixing of the settings tab
