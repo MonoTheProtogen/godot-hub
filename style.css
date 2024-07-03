@@ -276,9 +276,25 @@ p.mirrorp {
     position: relative;
     padding: 10px;
     border-radius: 15px;
-    left: 635px;
+    left: 534px;
     top: 5px;
 }
+
+p.monop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232334;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+    border-radius: 15px;
+    left: 500px;
+    top: 5px;
+    height: 40px;
+}
+
+
 select {
     background-color: #343445;
     border-color: transparent;
