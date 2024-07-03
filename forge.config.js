@@ -4,6 +4,7 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: './images/icons/hub_icon_512x512'
   },
   rebuildConfig: {},
   makers: [
@@ -11,7 +12,6 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {
         options: {
-          icon: './images/hub_icon_512x512.ico'
         }
       },
     },
@@ -19,16 +19,12 @@ module.exports = {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
       config: {
-        options: {
-          icon: './images/hub_icon_512x512.icns'
-        }
       }
     },
     {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
-        icon: './images/hub_icon_512x512.png'
         }
       },
     },
@@ -36,7 +32,6 @@ module.exports = {
       name: '@electron-forge/maker-rpm',
       config: {
         options: {
-          icon: './images/hub_icon_512x512.png'
         }
       },
     },
