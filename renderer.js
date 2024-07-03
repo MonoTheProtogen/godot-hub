@@ -48,9 +48,11 @@ function bodyPrint() {
 
             break;
         case 1:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Versions</h2> </div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Versions</h2> <p class="mirrorp">Download Mirror: <select class="mirror"><option value="github">Github</option><option value="tuxfamily">Tuxfamily</option></select></p> </div>'
 
 
+
+            const mirror = document.querySelector(".mirror")
 
             break;
         case 2:
@@ -64,7 +66,9 @@ function bodyPrint() {
             const verbrowse = document.querySelector(".verbrowse")
             const setsave = document.querySelector(".setsave")
 
-            
+            projbrowse.addEventListener("click", function(){ipc.send('projbrowse')})
+            verbrowse.addEventListener("click", function() {ipc.send('verbrowse')})
+            setsave.addEventListener("click", function() {ipc.send('setsave')})
 
             break;
     }

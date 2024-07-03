@@ -222,6 +222,7 @@ div.settingbody > p > input {
     border-radius: 15px;
     color: white;
     font-size: 10pt;
+    font-family: custom;
 }
 button {
     background-color: #232334;
@@ -270,4 +271,22 @@ p.setsave:hover {
 }
 p.note {
     color: #555;
+}
+p.mirrorp {
+    background-color: #232334;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+    border-radius: 15px;
+    left: 635px;
+    top: 5px;
+}
+select {
+    background-color: #343445;
+    border-color: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 10pt;
+    font-family: custom;
 }
