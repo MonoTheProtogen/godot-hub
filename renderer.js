@@ -64,11 +64,6 @@ function bodyPrint() {
             const verbrowse = document.querySelector(".verbrowse")
             const setsave = document.querySelector(".setsave")
 
-            setsave.addEventListener("click", function() {
-                console.log(projpath.value)
-                console.log(verpath.value)
-            })
-
             
 
             break;

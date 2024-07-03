@@ -19,6 +19,7 @@ const createWindow = () => {
     frame: false,
     resizable: false,
     icon: "./images/hub_icon_512x512.png",
+    darkTheme: true,
     
     // show: false,
   })

@@ -237,6 +237,16 @@ button {
 input {
     font-family: custom;
 }
+input.projpath {
+    width: 500px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+input.verpath {
+    width: 445px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 p.setsave {
     background-color: #232334;
     border-radius: 15px;
