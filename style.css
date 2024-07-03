@@ -223,31 +223,29 @@ div.settingbody > p > input {
     color: white;
     font-size: 10pt;
     font-family: custom;
+    transition-duration: 0.25s;
 }
-button {
-    background-color: #232334;
-    border-bottom: #343445;
-    border-color: transparent;
-    padding: 10px;
-    border-radius: 15px;
-    color: white;
-    font-size: 10pt;
-    margin-left: 10px;
-    font-family: custom;
+div.settingbody > p > input:hover {
+    background-color: #343445;
 }
+
 input {
     font-family: custom;
 }
-input.projpath {
+input.projectpath {
     width: 500px;
     margin-right: 10px;
     margin-left: 10px;
+    transition-duration: 0.25s;
 }
-input.verpath {
+input.versionpath {
     width: 445px;
     margin-right: 10px;
     margin-left: 10px;
+    transition-duration: 0.25s;
 }
+
+
 p.setsave {
     background-color: #232334;
     border-radius: 15px;

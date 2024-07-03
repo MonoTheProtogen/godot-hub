@@ -70,3 +70,35 @@ ipcMain.on('credits', () => {
   // shell.openExternal('https://github.com/MonoTheProtogen')
   shell.openExternal('https://github.com/MonoTheProtogen/godot-hub')
 })
+
+// options handling
+
+function setOptions() {
+
+}
+
+ipcMain.on('saveSettings', () => {
+  setOptions()
+})
+
+// folder handling
+
+async function browseHomeFolder() {
+  const homeFolder = await dialog.showOpenDialog(mainWindow, {
+    title: 'Choose a home folder',
+    properties: ['openDirectory']
+  })
+  // console.log(homeFolder)
+  if (homeFolder.canceled) {
+    return null
+  } else {
+    const pathNormalized = homeFolder.filePaths[0].replace(/\\/msg, '/')
+    appOptions.homeFolder = pathNormalized
+    await setOptions()
+    return appOptions.homeFolder
+  }
+}
+
+ipcMain.handle('settings:setHomeFolder', async (event, folder) => {
+  return await browseHomeFolder()
+})
