@@ -47,7 +47,7 @@ const createWindow = () => {
     },
     frame: false,
     resizable: false,
-    icon: "./images/hub_icon_512x512.png",
+    icon: "./images/icons/hub_icon_512x512.png",
     darkTheme: true,
 
 
