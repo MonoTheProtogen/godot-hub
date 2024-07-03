@@ -133,7 +133,7 @@ const appConfig = path.join(app.getPath('userData'), 'app-config.json')
 
 async function browseProjectFolder() {
   const projectFolder = await dialog.showOpenDialog(mainWindow, {
-    title: 'Choose a home folder',
+    title: 'Choose a Project folder',
     properties: ['openDirectory']
   })
   // console.log(homeFolder)
