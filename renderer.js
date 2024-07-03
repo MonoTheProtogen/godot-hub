@@ -41,7 +41,7 @@ function bodyPrint() {
     
     switch(bodyTab) {
         case 0:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Projects</h2> <p class="newproj">+</p> </div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Projects</h2> <p class="newproj">+</p> <br><p class="note">To begin, double click one of the projects below or click the \"+\" button to create a new project</p> </div>'
 
             
 
