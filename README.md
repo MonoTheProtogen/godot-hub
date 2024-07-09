@@ -8,7 +8,8 @@ A simple project and version manager for the Godot Game Engine made using Electr
 ## Features
 - Managing and creating Godot projects
 - Managing, installing and removing Godot engine versions
-- ability to define custom filepaths for version downloads and project folders
+- Displaying latest (and by extension oldest) Godot engine news
+- Ability to define custom filepaths for version downloads and project folders (pretty bland feature ngl)
 
 ## Development status
 This program is very unfinished, currently it has *no* features that actually work, I don't have that much time to work on it, but whenever I find the time (and motiviation) to work on it, I try to add as much as I can, but as of now, this program only does the bare minimum, that being that it has UI, and that's about it. ¯\\\_(ツ)_/¯
