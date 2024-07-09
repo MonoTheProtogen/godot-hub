@@ -29,12 +29,22 @@ const body = document.querySelector(".body")
 const projects = document.querySelector(".projects")
 const versions = document.querySelector(".versions")
 const settings = document.querySelector(".settings")
+const home = document.querySelector(".home")
+const news = document.querySelector(".news")
 
-var bodyTab = 0 // 0 = Projects tab, 1 = Versions tab, 2 = Settings tab
+var bodyTab = 3 // 0 = Projects tab, 1 = Versions tab, 2 = Settings tab, 3 = Home tab, 4 = News tab
 
 projects.addEventListener("click", function() {bodyTab = 0; bodyPrint()})
 versions.addEventListener("click", function() {bodyTab = 1; bodyPrint()})
 settings.addEventListener("click", function() {bodyTab = 2; bodyPrint()})
+home.addEventListener("click", function() {bodyTab = 3; bodyPrint()})
+news.addEventListener("click", function() {bodyTab = 4; bodyPrint()})
+
+var username
+
+async function setUsername() {
+  username = await window.electronAPI.getUsername()
+}
 
 function bodyPrint() {
     body.innerHTML = ''
@@ -85,6 +95,16 @@ function bodyPrint() {
 
             projectpath.value = appOptions.projectFolder
             versionpath.value = appOptions.versionFolder 
+
+            break;
+        
+        case 3:
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome ' + username + '</p> </div>'
+
+            break;
+
+        case 4:
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">News</h2> </div>'
 
             break;
     }

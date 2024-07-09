@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // folder handling
+  // handlers
 
   contextBridge.exposeInMainWorld('electronAPI', {
     // other handlers
@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     minimizeApp: () => ipcRenderer.invoke('action:minimize'),
     openCredits: () => ipcRenderer.invoke('link:credits'),
     getSettings: () => ipcRenderer.invoke('settings:getSettings'),
+    getUsername: () => ipcRenderer.invoke('os:username'),
   })
 
 // titlebar and other functions

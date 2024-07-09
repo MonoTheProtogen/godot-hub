@@ -127,7 +127,7 @@ div.credits {
     color: #999;
     width: 100%;
     position: relative;
-    bottom: -140px;
+    bottom: -55px;
     left: 20px;
     cursor: default;
 }
@@ -303,4 +303,11 @@ select {
     color: white;
     font-size: 10pt;
     font-family: custom;
+}
+p.greet {
+    font-weight: bold;
+    color: #aaa;
+    position: relative;
+    left: 350px;
+    top: 5px;
 }
