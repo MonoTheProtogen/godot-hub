@@ -7,6 +7,12 @@ async function startup() {
     appOptions = await window.electronAPI.getSettings()
     console.log(appOptions)
 }
+
+var username
+async function setUsername() {
+  username = await window.electronAPI.getUsername()
+}
+setUsername()
 // when they switch to the settings tab use appOptions to populate the 2 textboxes
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,12 +45,6 @@ versions.addEventListener("click", function() {bodyTab = 1; bodyPrint()})
 settings.addEventListener("click", function() {bodyTab = 2; bodyPrint()})
 home.addEventListener("click", function() {bodyTab = 3; bodyPrint()})
 news.addEventListener("click", function() {bodyTab = 4; bodyPrint()})
-
-var username
-
-async function setUsername() {
-  username = await window.electronAPI.getUsername()
-}
 
 function bodyPrint() {
     body.innerHTML = ''
@@ -99,7 +99,8 @@ function bodyPrint() {
             break;
         
         case 3:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome ' + username + '</p> </div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome ' + username + ', have a good time making games!</p> </div>'
+            // body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2>  </div>'
 
             break;
 
@@ -111,4 +112,12 @@ function bodyPrint() {
 
 }
 
-bodyPrint()
+function startupPrint() {
+  body.innerHTML = ""
+  body.innerHTML += '<div class="loadingBody"><h1>Loading...</h1><progress></div>'
+}
+startupPrint()
+
+setTimeout(() => {
+  bodyPrint()
+}, 1300)

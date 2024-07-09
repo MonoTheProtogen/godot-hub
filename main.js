@@ -4,7 +4,7 @@
 const { app, BrowserWindow, ipcMain, shell, dialog, } = require('electron')
 const path = require('node:path')
 const fs = require('node:fs')
-const user = require('os').userInfo().username
+const { userInfo, } = require('os')
 
 let mainWindow
 
@@ -172,10 +172,8 @@ ipcMain.handle('settings:setVersionFolder', async (event, folder) => {
 
 // username grab
 
-async function usernameGrabber() {
-  return user
-}
-
-ipcMain.handle('os:username', async () => {
-  return await usernameGrabber()
+ipcMain.handle('os:username', () => {
+  const username = userInfo().username
+  console.log(username)
+  return username
 })
