@@ -4,7 +4,7 @@
 const { app, BrowserWindow, ipcMain, shell, dialog, } = require('electron')
 const path = require('node:path')
 const fs = require('node:fs')
-const user = require("os").userInfo().username
+const user = require('os').userInfo().username
 
 let mainWindow
 
