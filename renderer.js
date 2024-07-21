@@ -99,7 +99,8 @@ function bodyPrint() {
             break;
         
         case 3:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome ' + username + ', have a good time making games!</p> </div>'
+            // body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome ' + username + ', have a good time making games!</p> </div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome! Have a good time making games!</p> </div>'
             // body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2>  </div>'
 
             break;
