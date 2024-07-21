@@ -113,12 +113,16 @@ function bodyPrint() {
 
 }
 
-function startupPrint() {
-  body.innerHTML = ""
-  body.innerHTML += '<div class="loadingBody"><h1>Loading...</h1><progress></div>'
-}
-startupPrint()
+// unused function, don't mind this if you're modifying this software please, I was just trying some things out
 
-setTimeout(() => {
-  bodyPrint()
-}, 1300)
+// function startupPrint() {
+//   body.innerHTML = ""
+//   body.innerHTML += '<div class="loadingBody"><h1>Loading...</h1><progress></div>'
+// }
+// startupPrint()
+
+// setTimeout(() => {
+//   bodyPrint()
+// }, 1300)
+
+bodyPrint()
