@@ -18,7 +18,7 @@ This app ***does not*** have any prebuilt binaries yet, as soon as it is in a fu
 
 - Electron.js and Node.js - frameworks used by this app
 - Godot Game Engine - game engine for which this app is made
-- clubside - help with and bugfixing of the settings tab
+- (Electron Discord member) clubside - help with and bugfixing of the settings tab
 
 ## Dev's notes
 While this does look clean interface-wise (in my own opinion at least), there is no world in which I would recommend this program over other options like Godot Manager by eumario or Godot Version Manager by noidexe, due to them being much more mature programs than mine will ever be, theirs have more features than mine does, at least for the current moment, but if this program does ever get to a working state, it will definitely be *an* option for Godot game devs to use to manage their projects, due to running like a website, it's lightweight, has low system resource requirements and can potentially function faster than the two listed above, but would I say it's better? Absolutely not, I did not make this program to make more competition for Godot Manager or GVM, this was and is, purely a personal project, and I never intend to replace the above programs with mine, use this program at your own risk, though you won't lose your projects or files, I still can't promise you won't have a hard time using it.
