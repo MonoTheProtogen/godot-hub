@@ -7,7 +7,9 @@
     "test": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "builder build": "electron-builder build",
+    "builder start": "elecrton-builder start"
   },
   "keywords": [
     "godot",
