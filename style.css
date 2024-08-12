@@ -276,23 +276,11 @@ p.mirrorp {
     position: relative;
     padding: 10px;
     border-radius: 15px;
-    left: 534px;
+    left: 685px;
     top: 5px;
 }
 
-p.monop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #232334;
-    font-weight: bold;
-    position: relative;
-    padding: 10px;
-    border-radius: 15px;
-    left: 515px;
-    top: 5px;
-    height: 40px;
-}
+
 
 
 select {
