@@ -9,7 +9,10 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "builder build": "electron-builder build",
-    "builder start": "elecrton-builder start"
+    "builder start": "elecrton-builder start",
+    "builder pack": "electron-builder --dir",
+    "builder": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "keywords": [
     "godot",
