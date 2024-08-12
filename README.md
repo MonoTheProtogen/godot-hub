@@ -1,7 +1,7 @@
-# ![hub_icon_64x64](https://github.com/MonoTheProtogen/godot-hub/assets/64149624/fac310f9-30c0-4aab-9d2a-72b7e18cee18) Godot Hub 
+# ![hub_icon_64x64](https://github.com/user-attachments/assets/8333639a-6373-4810-94fb-f33967bbfe2a) Godot Hub 
 A simple project and version manager for the Godot Game Engine made using Electron and Node.js
 
-![image](https://github.com/user-attachments/assets/610332a2-09b8-4e89-b7a7-1638e7009fd6)
+![image](https://github.com/user-attachments/assets/c17a52a0-5691-4a38-80b7-e3f67b3acf56)
 
 ## Features
 - Managing and creating Godot projects
