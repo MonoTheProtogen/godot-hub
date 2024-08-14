@@ -45,6 +45,7 @@ const createWindow = () => {
       contextIsolation: true,
       sandbox: true,
       enableRemoteModule: false,
+      webviewTag: true,
     },
     frame: false,
     resizable: false,

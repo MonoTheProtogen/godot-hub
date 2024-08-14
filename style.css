@@ -308,6 +308,15 @@ div.loadingBody {
     flex-direction: column;
 }
 
-iframe {
-    
+webview {
+    width: 1020px;
+    height: 490px;
+}
+
+div.newsnote {
+    color: #555;
+    text-align: right;
+    font-size: 12pt;
+    position: relative;
+    left: 470px;
 }

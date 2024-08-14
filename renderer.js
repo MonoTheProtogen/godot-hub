@@ -106,9 +106,9 @@ function bodyPrint() {
             break;
 
         case 4:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">News</h2> </div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Blog</h2> <div class="newsnote">This is currently (and probably forever) a webview tag. <br> To go back to the Blog homepage click the tab on the left again.</div>'
 
-            body.innerHTML += '<div class="newsbody"> <iframe src="https://godotengine.org/blog/"></iframe> </div>'
+            body.innerHTML += '<div class="newsbody"> <webview src="https://godotengine.org/blog/"></webview> </div>'
 
             break;
     }
