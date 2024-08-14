@@ -57,7 +57,7 @@ const createWindow = () => {
 
     // show: false,
   })
-  mainWindow.setBackgroundColor('#343445')
+  // mainWindow.setBackgroundColor('#343445')
   // mainWindow.once('ready-to-show', () => {
   //   mainWindow.show()
   // })

@@ -4,6 +4,12 @@
 }
 
 body {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.window {
     background-color: #343445;
     font-family: custom;
     display: grid;
@@ -61,6 +67,7 @@ div.header {
     -webkit-user-select: none;
     -webkit-app-region: drag;
     cursor: default;
+    border-top-left-radius: 15px;
 }
 div.control {
     grid-area: head;
@@ -71,6 +78,8 @@ div.control {
     align-items: center;
     -webkit-app-region: drag;
     cursor: default;
+    position: relative;
+    right: 9px;
 }
 div.control > h2 {
     width: 60px;
@@ -168,6 +177,7 @@ div.body {
     cursor: default;
     color: white;
     padding-left: 25px;
+    border-bottom-right-radius: 15px;
 }
 
 div.utilitybar {
