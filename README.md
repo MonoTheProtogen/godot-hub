@@ -1,7 +1,7 @@
 # ![hub_icon_64x64](https://github.com/user-attachments/assets/8333639a-6373-4810-94fb-f33967bbfe2a) Godot Hub 
 A simple project and version manager for the Godot Game Engine made using Electron and Node.js
 
-![image](https://github.com/user-attachments/assets/c17a52a0-5691-4a38-80b7-e3f67b3acf56)
+![Untitled](https://github.com/user-attachments/assets/32f78acf-c4f3-4c7a-9d61-f1f072253db2)
 
 ## Features
 - Managing and creating Godot projects
