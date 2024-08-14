@@ -12,6 +12,7 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {
         options: {
+          icon: './images/icons/hub_icon_512x512.png',
         }
       },
     },
