@@ -17,6 +17,9 @@ body {
     height: 100%;
     color: white;
     cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 15px;
 }
 
 a {
@@ -358,6 +361,10 @@ div.projcontents {
 div.vercontents {
     height: 175px;
     max-width: 1025px;
+}
+
+h3 {
+    color: #999;
 }
 
 div.projbody {

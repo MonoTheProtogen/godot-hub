@@ -48,9 +48,11 @@ const createWindow = () => {
       webviewTag: true,
     },
     frame: false,
+    transparent: true,
     resizable: false,
     icon: "./images/icons/hub_icon_512x512.png",
     darkTheme: true,
+    center: true,
 
 
     // show: false,
