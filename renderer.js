@@ -108,6 +108,8 @@ function bodyPrint() {
         case 4:
             body.innerHTML += '<div class="utilitybar"> <h2 class="title">News</h2> </div>'
 
+            body.innerHTML += '<div class="newsbody"> <iframe src="https://godotengine.org/blog/"></iframe> </div>'
+
             break;
     }
 

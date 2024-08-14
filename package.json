@@ -7,12 +7,7 @@
     "test": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make",
-    "builder build": "electron-builder build",
-    "builder start": "elecrton-builder start",
-    "builder pack": "electron-builder --dir",
-    "builder": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "make": "electron-forge make"
   },
   "keywords": [
     "godot",
@@ -29,8 +24,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^31.3.1",
-    "electron-builder": "^24.13.3"
+    "electron": "^31.3.1"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
