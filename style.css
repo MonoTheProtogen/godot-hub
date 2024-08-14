@@ -342,3 +342,29 @@ img.nhomeicon {
 div.newshome:hover {
     background-color: #232334;
 }
+
+div.homebody {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 1025px;
+    align-items: flex-start;
+}
+
+div.projcontents {
+    height: 175px;
+    max-width: 1025px;
+}
+div.vercontents {
+    height: 175px;
+    max-width: 1025px;
+}
+
+div.projbody {
+    width: 1025px;
+    height: 495px;
+}
+div.verbody {
+    width: 1025px;
+    height: 495px;
+}

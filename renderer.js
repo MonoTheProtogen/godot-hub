@@ -53,17 +53,23 @@ function bodyPrint() {
         case 0:
             body.innerHTML += '<div class="utilitybar"> <h2 class="title">Projects</h2> <p class="newproj">+</p> <br><p class="note">To begin, double click one of the projects below or click the \"+\" button to create a new project</p> </div>'
 
-            
+            body.innerHTML += '<div class="projbody"></div>'
 
+            const projbody = document.querySelector(".projbody")
             const newproj = document.querySelector(".newproj")
+
+            projbody.innerHTML = ''
 
             break;
         case 1:
             body.innerHTML += '<div class="utilitybar"> <h2 class="title">Versions</h2> <p class="mirrorp">Version: <select class="mirror"><option value="stable">Stable</option><option value="mono">Stable (Mono)</option><option value="rc">RC</option><option value="beta">Beta</option><option value="dev">Dev (Alpha)</option> </select></p> </div>'
 
-
+            body.innerHTML += '<div class="verbody"></div>'
 
             const mirror = document.querySelector(".mirror")
+            const verbody = document.querySelector(".projbody")
+            
+            verbody.innerHTML = ''
 
             break;
         case 2:
@@ -102,6 +108,13 @@ function bodyPrint() {
             // body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome ' + username + ', have a good time making games!</p> </div>'
             body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2> <p class="greet">Welcome! Have a good time making games!</p> </div>'
             // body.innerHTML += '<div class="utilitybar"> <h2 class="title">Home</h2>  </div>'
+            body.innerHTML += '<div class="homebody"> <div class="homeproj"> <h3>Recent Projects</h3> <div class="projcontents"> </div> </div> <br> <div class="homevers"> <h3>Recent Versions</h3> <div class="vercontents"> </div> </div> </div>'
+
+            const vercontents = document.querySelector(".vercontents")
+            const projcontents = document.querySelector(".projcontents")
+
+            projcontents.innerHTML = ''
+            vercontents.innerHTML = ''
 
             break;
 
