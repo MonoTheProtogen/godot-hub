@@ -3,6 +3,10 @@
     src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
+* {
+    font-family: custom;
+}
+
 body {
     background-color: transparent;
     padding: 0px;
