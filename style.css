@@ -30,6 +30,7 @@ div.window {
     -webkit-user-select: none;
     user-select: none;
     border-radius: 15px;
+    border-bottom-right-radius: 20px;
 }
 
 a {
@@ -388,4 +389,15 @@ div.projbody {
 div.verbody {
     width: 1025px;
     height: 495px;
+}
+
+div.version {
+    color: #555;
+    font-size: 12pt;
+    position: relative;
+    font-weight: bold;
+    left: 900px;
+    top: 325px;
+    height: fit-content;
+    width: fit-content;
 }
