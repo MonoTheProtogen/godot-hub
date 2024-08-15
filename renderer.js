@@ -119,7 +119,7 @@ function bodyPrint() {
             break;
 
         case 4:
-            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Blog</h2> <div class="newshome"><img class="nhomeicon" src="./images/home-icon-silhouette-svgrepo-com.svg"></img></div> <div class="newsnote">This is currently (and probably forever) a webview tag.</div>'
+            body.innerHTML += '<div class="utilitybar"> <h2 class="title">Blog</h2> <div class="newshome"><img class="nhomeicon" src="./images/home-icon-silhouette-svgrepo-com.svg"></img></div> <!-- <div class="newsnote">This is currently (and probably forever) a webview tag.</div> --> </div'
 
             body.innerHTML += '<div class="newsbody"> <webview src="https://godotengine.org/blog/"></webview> </div>'
 

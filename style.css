@@ -327,9 +327,13 @@ div.loadingBody {
 }
 
 webview {
-    width: 1025px;
-    height: 495px;
-
+    width: 1030px;
+    height: 500px;
+    position: relative;
+    left: -10px;
+    top: -9px;
+    border: 7px solid #25282B;
+    border-radius: 7px;
 }
 
 div.newsnote {
