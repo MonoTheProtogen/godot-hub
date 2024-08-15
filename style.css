@@ -320,6 +320,7 @@ select {
     color: white;
     font-size: 10pt;
     font-family: custom;
+    cursor: pointer;
 }
 p.greet {
     font-weight: bold;
