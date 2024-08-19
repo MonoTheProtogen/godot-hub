@@ -17,6 +17,18 @@ This program is very unfinished, currently it has *two* features that actually w
 
 This app ***does not*** have any prebuilt binaries yet, as soon as it is in a functional state, I will be shipping prebuilt binaries in the releases tab, until then, anyone is welcome to build the app themselves by using the source code, any changes made to the source code must follow the license guidelines.
 
+## Roadmap
+
+- ~~UI~~
+- Project Management
+- Version Management
+- ~~Config File Save~~
+- ~~News Viewing~~
+- User Styled UI
+- Support for all Godot Engine versions (1.0 upwards)
+
+`crossed out = done`
+
 ## Credits
 
 - Electron.js and Node.js - frameworks used by this app
