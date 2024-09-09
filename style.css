@@ -416,11 +416,15 @@ div.version {
     position: relative;
     font-weight: bold;
     left: 900px;
-    top: 325px;
+    top: 255px;
     height: fit-content;
     width: fit-content;
 }
 
 div.side > img {
     cursor: pointer;
+}
+
+div.uitheme > p {
+    font-weight: bold;
 }
