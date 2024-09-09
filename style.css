@@ -98,6 +98,7 @@ div.control > h2 {
     border-radius: 10px;
     -webkit-app-region: no-drag;
     cursor: default;
+    font-family: custom;
 }
 
 h2.close {
