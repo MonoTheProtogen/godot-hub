@@ -9,9 +9,6 @@ A simple project and version manager for the Godot Game Engine made using Electr
 - Displaying latest (and by extension oldest) Godot engine news
 - Ability to define custom filepaths for version downloads and project folders (pretty bland feature ngl)
 
-## UI Styling
-A small feature that I have planned is to allow the user to style the program to their liking by allowing them to edit the CSS from within the settings panel, as of now I have no idea how to do this so how you see the app in the above preview screenshot is how you're gonna get it for now, unless of course you'd like to take the source code and waddle through my messy CSS to modify the colours yourself, I'd suggest waiting until I implement this feature so that you don't have to find out what each and every random CSS tag does.
-
 ## Development status
 This program is very unfinished, currently it has *two* features that actually work, those being the settings and news panels, aside from that everything else is still work in progress, I don't have that much time to work on it, but whenever I find the time (and motiviation) to work on it, I try to add as much as I can, but as of now, this program only does the bare minimum, and that's about it. ¯\\\_(ツ)_/¯
 
@@ -24,7 +21,6 @@ This app ***does not*** have any prebuilt binaries yet, as soon as it is in a fu
 - [ ] Version Management
 - [X] Config File Save
 - [X] News Viewing
-- [ ] User Styled UI
 - [ ] Support for all Godot Engine versions (1.0 upwards)
 - [ ] Light/Dark mode switch in the settings menu
 
