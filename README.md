@@ -20,13 +20,13 @@ This app ***does not*** have any prebuilt binaries yet, as soon as it is in a fu
 ## Roadmap
 
 - [X] UI
-- [] Project Management
-- [] Version Management
+- [ ] Project Management
+- [ ] Version Management
 - [X] Config File Save
 - [X] News Viewing
-- [] User Styled UI
-- [] Support for all Godot Engine versions (1.0 upwards)
-- [] Light/Dark mode switch in the settings menu
+- [ ] User Styled UI
+- [ ] Support for all Godot Engine versions (1.0 upwards)
+- [ ] Light/Dark mode switch in the settings menu
 
 ## Credits
 
