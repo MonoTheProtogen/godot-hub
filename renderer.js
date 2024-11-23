@@ -75,7 +75,7 @@ function bodyPrint() {
         case 2:
             body.innerHTML += '<div class="utilitybar"> <h2 class="title">Settings</h2> </div>'
 
-            body.innerHTML += '<div class="settingbody"> <p>Projects folder path: <input type="text" class="projectpath" value=""> <input type="button" value="Browse" class="projbrowse"> </p> <p>Godot versions folder path: <input type="text" class="versionpath" value=""> <input type="button" value="Browse" class="verbrowse"> <div class="uitheme"> <p>UI Theme: <select class="uithemeselect"> <option value="dark">Dark (default)</option> <option value="light">Light</option> </select> </p> </div> <div class="version">Version 0.0.1</div> </div>'
+            body.innerHTML += '<div class="settingbody"> <p>Projects folder path: <input type="text" class="projectpath" value=""> <input type="button" value="Browse" class="projbrowse"> </p> <p>Godot versions folder path: <input type="text" class="versionpath" value=""> <input type="button" value="Browse" class="verbrowse"> <div class="version">Version 0.0.1</div> </div>'
             
             const projectpath = document.querySelector(".projectpath")
             const versionpath = document.querySelector(".versionpath")
