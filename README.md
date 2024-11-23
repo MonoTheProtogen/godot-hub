@@ -22,7 +22,6 @@ This app ***does not*** have any prebuilt binaries yet, as soon as it is in a fu
 - [X] Config File Save
 - [X] News Viewing
 - [ ] Support for all Godot Engine versions (1.0 upwards)
-- [ ] Light/Dark mode switch in the settings menu
 
 ## Credits
 
