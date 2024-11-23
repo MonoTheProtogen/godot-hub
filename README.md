@@ -2,6 +2,7 @@
 A simple project and version manager for the Godot Game Engine made using Electron and Node.js
 
 ![Untitled](https://github.com/user-attachments/assets/a9715ec7-0e53-40c0-b2e9-a10e434df056)
+(yes, the window corners are rounded)
 
 ## Features
 - Managing and creating Godot projects
