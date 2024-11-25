@@ -1,6 +1,3 @@
-## Branch Info
-This is an experimental refactor of the app's entire UI into React.js to make it more flexible and just overall less of a mess
-
 # ![hub_icon_64x64](https://github.com/user-attachments/assets/8333639a-6373-4810-94fb-f33967bbfe2a) Godot Hub 
 A simple project and version manager for the Godot Game Engine made using Electron and Node.js
 
