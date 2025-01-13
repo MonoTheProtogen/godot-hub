@@ -29,7 +29,7 @@ div.window {
     cursor: default;
     -webkit-user-select: none;
     user-select: none;
-    border-radius: 15px;
+    border-radius: 12px;
     border-bottom-right-radius: 20px;
 }
 
@@ -192,7 +192,7 @@ div.body {
     cursor: default;
     color: white;
     padding-left: 25px;
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 12px;
 }
 
 div.utilitybar {
