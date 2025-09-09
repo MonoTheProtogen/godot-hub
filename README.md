@@ -1,5 +1,5 @@
-## repo temporarily archived
-I haven't really had much time to work on this project over the last few months, I've been mesning to get back to it but there are things that are more important than this on my head at the moment, to whoever's browsing this repo, feel free to take the code, modify it, just make sure to credit me if you redistribute it
+## Repo temporarily archived
+I haven't really had much time to work on this project over the last few months, I've been meaning to get back to it but there are things that are more important than this on my head at the moment, to whoever's browsing this repo, feel free to take the code, modify it, just make sure to credit me if you redistribute it
 
 # ![hub_icon_64x64](https://github.com/user-attachments/assets/8333639a-6373-4810-94fb-f33967bbfe2a) Godot Hub 
 A simple project and version manager for the Godot Game Engine made using Electron and Node.js
